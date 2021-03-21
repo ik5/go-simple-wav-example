@@ -23,7 +23,7 @@ func (wf WaveFormat) String() string {
 		format = "Extension "
 	}
 
-	return fmt.Sprintf("%s0x%x", format, wf)
+	return fmt.Sprintf("%s0x%x", format, int16(wf))
 }
 
 func (ct ChannelType) String() string {
